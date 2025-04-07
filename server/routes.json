@@ -1,0 +1,5 @@
+{
+    "/rate-inquiry/:type/:file": "/rate-inquiry?type=:type?file=:file",
+    "/files/:filename": "/file",
+    "/file/:filename": "/file"
+}

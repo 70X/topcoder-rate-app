@@ -1,0 +1,15 @@
+<div class="layout-container" fxLayout="column">
+  <div class="layout-container__header">
+    <ng-content select="[header]"></ng-content>
+  </div>
+  <div class="layout-container__body">
+    <div class="layout-container__center">
+      <div class="layout-container__tabs">
+        <ng-content select="[tabs]"></ng-content>
+      </div>
+      <div class="layout-container__table">
+        <ng-content select="[table]"></ng-content>
+      </div>
+    </div>
+  </div>
+</div>

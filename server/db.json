@@ -1,0 +1,88 @@
+{
+  "authorize": {},
+  "rate-inquiry": {
+    "fromDate": "2020-06-01T00:00:00.000Z",
+    "toDate": "2020-06-08T00:00:00.000Z",
+    "subscriberId": "[object FormData]"
+  },
+  "file": {},
+  "files": [
+    {
+      "filename": "File Name",
+      "fileurl": "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv",
+      "userid": "userId01",
+      "createDate": "2020-06-07T08:00:53.406Z",
+      "status": "Complete"
+    },
+    {
+      "filename": "File Name 1",
+      "fileurl": "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv",
+      "userid": "userId02",
+      "createDate": "2020-06-07T08:00:53.406Z",
+      "status": "Complete"
+    },
+    {
+      "filename": "File Name 2",
+      "fileurl": "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv",
+      "userid": "userId03",
+      "createDate": "2020-06-07T08:00:53.406Z",
+      "status": "Complete"
+    },
+    {
+      "filename": "File Name 3",
+      "fileurl": "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv",
+      "userid": "userId04",
+      "createDate": "2020-06-07T08:00:53.406Z",
+      "status": "Complete"
+    },
+    {
+      "filename": "File Name 4",
+      "fileurl": "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv",
+      "userid": "userId01",
+      "createDate": "2020-06-07T08:00:53.406Z",
+      "status": "Complete"
+    },
+    {
+      "filename": "File Name 5",
+      "fileurl": "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv",
+      "userid": "userId05",
+      "createDate": "2020-06-08T08:00:53.406Z",
+      "status": "Complete"
+    },
+    {
+      "filename": "File Name 6",
+      "fileurl": "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv",
+      "userid": "userId01",
+      "createDate": "2020-06-05T08:00:53.406Z",
+      "status": "Complete"
+    },
+    {
+      "filename": "File Name 7",
+      "fileurl": "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv",
+      "userid": "userId01",
+      "createDate": "2020-06-07T08:00:53.406Z",
+      "status": "Complete"
+    },
+    {
+      "filename": "File Name 8",
+      "fileurl": "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv",
+      "userid": "userId01",
+      "createDate": "2020-06-07T08:00:53.406Z",
+      "status": "Complete"
+    },
+    {
+      "filename": "File Name 9",
+      "fileurl": "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv",
+      "userid": "userId01",
+      "createDate": "2020-06-07T08:00:53.406Z",
+      "status": "Complete"
+    },
+    {
+      "filename": "File Name 10",
+      "fileurl": "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv",
+      "userid": "userId01",
+      "createDate": "2020-06-07T08:00:53.406Z",
+      "status": "Complete"
+    }
+  ]
+}

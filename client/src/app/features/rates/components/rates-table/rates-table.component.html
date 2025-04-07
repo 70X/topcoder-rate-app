@@ -1,0 +1,45 @@
+<div class="mat-elevation-z8">
+  <div class="table-container">
+    <table mat-table [dataSource]="dataSource" matSort>
+
+      <ng-container matColumnDef="filename">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> File Name </th>
+        <td mat-cell *matCellDef="let rate">
+          <a [href]="rate.fileurl" target="_blank" [download]="rate.filename">{{rate.filename}}
+          </a>
+        </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="dateSubmitted">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Date Submitted </th>
+        <td mat-cell *matCellDef="let rate"> {{rate.dateSubmitted | date:'MM/dd/yyyy HH:mm' }} </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="submittedBy">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Submitted by </th>
+        <td mat-cell *matCellDef="let rate"> {{rate.submittedBy}} </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
+        <td mat-cell *matCellDef="let rate"> {{rate.status}} </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="delete">
+        <th mat-header-cell *matHeaderCellDef> Delete </th>
+        <td mat-cell *matCellDef="let rate">
+          <button mat-mini-fab aria-label="delete item" (click)="deleteItem(rate)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="tableCols; sticky: true"></tr>
+      <tr mat-row *matRowDef="let row; columns: tableCols;"></tr>
+    </table>
+  </div>
+  <mat-paginator fixed [pageSizeOptions]="[5, 10, 20, 50, 100]" [pageSize]="20" showFirstLastButtons></mat-paginator>
+</div>

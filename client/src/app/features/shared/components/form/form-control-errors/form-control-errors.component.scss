@@ -1,0 +1,8 @@
+@import "./src/assets/styles/palette.scss";
+
+.form-control-errors {
+  color: $error;
+  font-size: 12px;
+  height: 12px;
+  margin-top: -16px;
+}

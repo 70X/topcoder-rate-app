@@ -1,0 +1,15 @@
+<form novalidate [formGroup]="form" (submit)="saveInquiry()" class="rates-inquiry-upload">
+
+  <wbr-rates-form-input-type [control]="dataFormControls.type"></wbr-rates-form-input-type>
+
+  <wbr-form-input-file [formats]="['csv']" [control]="dataFormControls.file"></wbr-form-input-file>
+  <wbr-form-control-errors *ngIf="dataFormControls.file.errors && dataFormControls.file.touched"
+    class="rates-inquiry-upload__file-errors" [control]="dataFormControls.file"
+    [touched]="dataFormControls.file.touched">
+  </wbr-form-control-errors>
+
+  <wbr-form-input-datepicker label='Rate From Date:' [control]="dataFormControls.fromDate"></wbr-form-input-datepicker>
+  <wbr-form-input-datepicker label='Rate To Date:' [control]="dataFormControls.toDate"></wbr-form-input-datepicker>
+
+  <button mat-raised-button color="primary" type="submit">Submit</button>
+</form>

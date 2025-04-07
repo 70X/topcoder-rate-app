@@ -1,0 +1,7 @@
+<mat-form-field>
+  <input type="text" (blur)="updateValue()" (keyup.enter)="updateValue()" [placeholder]="label" matInput
+    [formControl]="controlSelect" [matAutocomplete]="auto">
+</mat-form-field>
+<mat-autocomplete #auto="matAutocomplete" autoActiveFirstOption>
+  <mat-option *ngFor="let option of filteredOptions$ | async" [value]="option.value">{{option.viewValue}}</mat-option>
+</mat-autocomplete>

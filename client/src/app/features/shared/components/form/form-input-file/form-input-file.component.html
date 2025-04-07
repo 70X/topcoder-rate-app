@@ -1,0 +1,6 @@
+<div class="form-input" fxLayout="row" fxLayoutAlign="center center">
+  <span fxFlex="40">Choose a file: </span>
+  <div fxFlex="60">
+    <input type="file" #inputFile (change)="onFileChange($event, inputFile)">
+  </div>
+</div>

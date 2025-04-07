@@ -1,0 +1,34 @@
+<wbr-layout-container>
+  <wbr-header header></wbr-header>
+
+  <mat-tab-group tabs>
+    <mat-tab label="Online Form">
+      <wbr-rates-inquiry-info class="rates-page__tab" (inquiryInfo)="inquiryInfo($event)">
+      </wbr-rates-inquiry-info>
+    </mat-tab>
+
+    <mat-tab label="File Upload">
+      <wbr-rates-inquiry-upload class="rates-page__tab" (inquiryUpload)="inquiryUpload($event)">
+      </wbr-rates-inquiry-upload>
+    </mat-tab>
+  </mat-tab-group>
+
+  <div class="rates-page__table-container" table>
+    <div class="rates-page__table-filter" fxLayout="row" fxLayout.xs="column" fxLayoutGap.gt-xs="20px">
+      <button mat-mini-fab aria-label="refresh item" color="primary" (click)="getInquiryFile()">
+        <mat-icon>refresh</mat-icon>
+      </button>
+      <wbr-rates-filter-by-user [users]="users" (filter)="applyFilter({ byUserId: $event })">
+      </wbr-rates-filter-by-user>
+      <wbr-rates-filter-by-date (filter)="applyFilter({ byDate: $event })"></wbr-rates-filter-by-date>
+    </div>
+    <wbr-loading-spinner class="rates-page__table-loading" *ngIf="loading"></wbr-loading-spinner>
+    <ng-container *ngIf="filterRates && filterRates.length > 0; else noResult">
+      <wbr-rates-table class="rates-page__table" (inquiryDelete)="inquiryDelete($event)" [rates]="filterRates">
+      </wbr-rates-table>
+    </ng-container>
+    <ng-template #noResult>
+      No results
+    </ng-template>
+  </div>
+</wbr-layout-container>

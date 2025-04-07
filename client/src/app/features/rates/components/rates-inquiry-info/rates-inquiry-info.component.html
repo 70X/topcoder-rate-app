@@ -1,0 +1,7 @@
+<form novalidate [formGroup]="form" (submit)="saveInquiry()" class="rates-inquiry-info">
+  <wbr-form-input-text label='Group ID(s) *' placeholder='00001234,12345678' [control]="dataFormControls.groupIds">
+  </wbr-form-input-text>
+  <wbr-form-input-datepicker label='Rate From Date *' [control]="dataFormControls.fromDate"></wbr-form-input-datepicker>
+  <wbr-form-input-datepicker label='Rate To Date *' [control]="dataFormControls.toDate"></wbr-form-input-datepicker>
+  <button mat-raised-button color="primary" type="submit">Submit</button>
+</form>

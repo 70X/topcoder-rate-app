@@ -1,0 +1,9 @@
+<div class="rates-form-input-type" fxLayout="row" fxLayoutAlign="center center">
+  <span fxFlex="40">Request Type: </span>
+  <div fxFlex="60">
+    <mat-button-toggle-group name="type" aria-label="Request Type" [formControl]="control">
+      <mat-button-toggle [value]="InquiryFileType.GROUP"> Group ID(s)</mat-button-toggle>
+      <mat-button-toggle [value]="InquiryFileType.SUBSCRIBER"> Subscriber ID(s) </mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+</div>

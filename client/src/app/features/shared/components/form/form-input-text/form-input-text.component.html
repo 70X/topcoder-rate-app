@@ -1,0 +1,7 @@
+<div class="form-input">
+  <mat-form-field class="form-input__field">
+    <mat-label>{{ label }}</mat-label>
+    <input matInput [placeholder]="placeholder" [formControl]="control">
+  </mat-form-field>
+  <wbr-form-control-errors [control]="control" [touched]="control.touched"></wbr-form-control-errors>
+</div>

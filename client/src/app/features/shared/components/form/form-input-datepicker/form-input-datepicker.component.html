@@ -1,0 +1,9 @@
+<div class="form-input">
+  <mat-form-field class="form-input__field">
+    <mat-label>{{ label }}</mat-label>
+    <input matInput [matDatepicker]="picker" [formControl]="control">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <wbr-form-control-errors [control]="control" [touched]="control.touched"></wbr-form-control-errors>
+</div>
